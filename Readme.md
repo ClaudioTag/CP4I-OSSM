@@ -6,6 +6,8 @@
 ## Cluster set-up
 
 Provision an OpenShift 4.3 cluster with Cloud Pak for Integration 2020.1 installed.
+
+
 ***Note:*** The instructions in this repo specifically refer to these versions of the CP4I and OCP.
 
 ## Service Mesh set-up
