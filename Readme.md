@@ -1,4 +1,4 @@
-# Red Hat OpenShift Service Mesh and Cloud Pak for Integration
+# Cloud Pak for Integration and Red Hat OpenShift Service Mesh
 
 - An installation of Red Hat OpenShift Service Mesh differs from upstream Istio community installations in multiple ways: https://docs.openshift.com/container-platform/4.3/service_mesh/service_mesh_arch/ossm-vs-community.html#ossm-vs-community
 - OCP uses an opinionated version of Istio called Maistra: https://maistra.io/
