@@ -28,7 +28,7 @@ Provision an OpenShift 4.3 cluster with Cloud Pak for Integration 2020.1 install
   - Install the Red Hat version of Kiali (not community) successfully
   - Install Red Hat OpenShift Service Mesh
 - Create a service mesh control plane in the `istio-system` namespace from the Installed Operators tab, and using the basic yaml install without customisation: `servicemeshcontrolplane-install-01`
-- Create a Service Mesh Member Roll called `default`, with an empty project (`istio-test-ns-01`) added to the members:
+- Create a Service Mesh Member Roll called `default`, with a sample empty project (`istio-test-ns-01`) added to the members:
 ```
 apiVersion: maistra.io/v1
 kind: ServiceMeshMemberRoll
@@ -48,9 +48,9 @@ spec:
   ior_enabled: true
   ```
 - Follow instructions at: https://docs.openshift.com/container-platform/4.3/service_mesh/service_mesh_day_two/prepare-to-deploy-applications-ossm.html
-- Using the `default` template: no ConfigMap created
+- Use the `default` template: no need to create a ConfigMap
 - Add line: `sidecar.istio.io/inject: 'true'` to test deployment in **spec > template > metadata > annotations**
-- Chang mixer policy enforcement from `disablePolicyChecks: true`  to `disablePolicyChecks: false`.
+- Change mixer policy enforcement from `disablePolicyChecks: true`  to `disablePolicyChecks: false`.
 - Test that Istio injection works for selected deployments
 
 ## Applications
