@@ -2,7 +2,7 @@
 - Use `Transformation_Map` test service: https://github.com/ClaudioTag/CP4I-OSSM/blob/master/ace/testAPIs/Transformation_Map.bar
 - Deploy from the ACE Dashboard
 - Confirm that service cannot be invoked
-- Test Istio sidecar injection to `toolkit-no-tracing` server by editing the deployment YAML manually: added line `sidecar.istio.io/inject: 'true'` to deployment in **spec > template > metadata > annotations**
+- Enable Istio sidecar injection to `toolkit-no-tracing` server by editing the deployment YAML manually: add line `sidecar.istio.io/inject: 'true'` to deployment in **spec > template > metadata > annotations**
 - Create Istio Gateway: `toolkit-no-tracing-gateway.yaml`
 - Create Virtual Service using the `istioselector` label: `toolkit-no-tracing-virtual-service.yaml`
 - Create Destination Rule: `toolkit-no-tracing-destionation-rule.yaml`

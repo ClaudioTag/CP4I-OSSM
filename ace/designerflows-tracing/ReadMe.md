@@ -2,7 +2,7 @@
 - Use `SimpleAPI` test API: https://github.com/ClaudioTag/CP4I-OSSM/blob/master/ace/testAPIs/simpleAPI.bar
 - Deploy from the ACE Dashboard
 - Confirm that API cannot be invoked
-- Test Istio sidecar injection to `designerflows-tracing` server by editing the deployment YAML manually: added line `sidecar.istio.io/inject: 'true'` to deployment in **spec > template > metadata > annotations**
+- Enable Istio sidecar injection to `designerflows-tracing` server by editing the deployment YAML manually: add line `sidecar.istio.io/inject: 'true'` to deployment in **spec > template > metadata > annotations**
 - Create Istio Gateway: `designerflows-tracing-gateway.yaml`
 - Create Virtual Service using the `istioselector` label: `designerflows-tracing-virtual-service.yaml`
 - Create 2 Destination Rules: `designerflows-tracing-destionation-rule.yaml`
